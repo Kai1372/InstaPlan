@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InstaPlan.View.DateTime"
+             xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
+             BackgroundColor="#EDEDED">
+
+
+    <ScrollView Margin="10"
+                VerticalScrollBarVisibility="Default">
+        <StackLayout>
+            <cal:Calendar/>
+            <Button Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="1" Text="Choose Date" HeightRequest="50" WidthRequest="190" 
+                    Background="#1098AD" TextColor="White" FontFamily="KeepCalm" FontSize="Medium" Clicked="OnDatePickedButtonClicked"/>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

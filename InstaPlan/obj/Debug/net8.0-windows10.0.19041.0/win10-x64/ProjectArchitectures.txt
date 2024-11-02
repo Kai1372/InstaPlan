@@ -1,0 +1,1 @@
+C:\Dev\.MAUI\InstaPlan\InstaPlan\InstaPlan.csproj;x64

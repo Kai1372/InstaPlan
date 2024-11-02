@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="InstaPlan.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:InstaPlan.View"
+    Shell.FlyoutBehavior="Disabled"
+    Title="InstaPlan">
+
+    
+    <ShellContent
+        Shell.NavBarIsVisible="False"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:LoginRegisterPage}"
+        Route="BookingLandingPage" />
+ 
+</Shell>

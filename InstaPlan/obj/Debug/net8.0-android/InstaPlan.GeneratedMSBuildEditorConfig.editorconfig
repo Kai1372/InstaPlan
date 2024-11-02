@@ -1,0 +1,95 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InstaPlan
+build_property.ProjectDir = C:\Dev\.MAUI\InstaPlan\InstaPlan\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/BookingLandingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.BookingLandingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\BookingLandingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\BookingLandingPage.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/DateTime.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.DateTime.xaml
+build_metadata.AdditionalFiles.TargetPath = View\DateTime.xaml
+build_metadata.AdditionalFiles.RelativePath = View\DateTime.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/FAQPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.FAQPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\FAQPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\FAQPage.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/FlightBook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.FlightBook.xaml
+build_metadata.AdditionalFiles.TargetPath = View\FlightBook.xaml
+build_metadata.AdditionalFiles.RelativePath = View\FlightBook.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/HotelBook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.HotelBook.xaml
+build_metadata.AdditionalFiles.TargetPath = View\HotelBook.xaml
+build_metadata.AdditionalFiles.RelativePath = View\HotelBook.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/Impressum.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.Impressum.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Impressum.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Impressum.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/InfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.InfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InfoPage.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/LoginRegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.LoginRegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LoginRegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LoginRegisterPage.xaml
+
+[C:/Dev/.MAUI/InstaPlan/InstaPlan/View/PaymentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InstaPlan.View.PaymentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PaymentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PaymentPage.xaml

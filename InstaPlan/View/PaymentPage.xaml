@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cal="clr-namespace:Plugin.Maui.Calendar.Controls;assembly=Plugin.Maui.Calendar"
+             x:Class="InstaPlan.View.PaymentPage"
+             BackgroundColor="#EDEDED">
+
+    <ScrollView Margin="0"
+                VerticalScrollBarVisibility="Default">
+
+
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="0" RowSpacing="0" RowDefinitions="600,80,*,*,*,120">
+            <!--Row One-->
+            <Image Source="hotelbookingbanner.jpg" Aspect="Fill" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="1"/>
+            <Image Source="headerbg.png" Aspect="Fill" Grid.Column="6" Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="1"></Image>
+            <FlexLayout Direction="Column"
+                        AlignItems="Center"
+                        JustifyContent="SpaceEvenly"
+                        Grid.Column="1" 
+                        Grid.Row="0" 
+                        Grid.ColumnSpan="3" 
+                        Grid.RowSpan="1">
+                <Image Source="logo.png"
+                       Aspect="Fill"
+                       WidthRequest="150"/>
+                <Label Text="Checkout" TextColor="#009592" FontSize="54" FontFamily="KeepCalm" />
+            </FlexLayout>
+            <!--Row Two-->
+            <Button Grid.Column="7" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="1" HeightRequest="80" BackgroundColor="#009592" TextColor="White" FontFamily="KeepCalm"  FontSize="Large" Text="BACK" Clicked="OnNavigateButtonClicked"/>
+           
+            <!--Column Three-Five-->
+            <CollectionView Grid.Column="0"
+                  Grid.ColumnSpan="1"
+                  Grid.Row="2"
+                  Grid.RowSpan="1"
+                  Margin="0,20,0,0"
+                  SelectionMode="Single"
+                  ItemsSource="{Binding CombinedMenuItems}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10"
+                                 Margin="5"
+                                 BackgroundColor="Transparent"
+                                 CornerRadius="10"
+                                 BorderColor="#808080"
+                                 HeightRequest="290"
+                                 MinimumWidthRequest="250"
+                                 HasShadow="False"
+                                 Grid.ColumnSpan="5">
+                            <Grid RowDefinitions="*,*,*,*,*"
+                                      ColumnDefinitions="*,*,200">
+
+                                <!--Column One-->
+                                <Image Aspect="AspectFill" Source="{Binding Image}"
+                                       Grid.RowSpan="5"/>
+                                <!--Column Two-->
+                                <Label Text="{Binding Hotel}"
+                                 TextColor="Black"
+                                 FontFamily="KeepCalm"
+                                 FontSize="20"
+                                 Grid.Column="1"
+                                 Grid.Row="0"
+                                           Margin="20,0,0,0"/>
+                                <Label Text="{Binding Address}"
+                                 TextColor="Black"
+                                 FontFamily="KeepCalm"
+                                 FontSize="16"
+                                 Grid.Column="1"
+                                 Grid.Row="1"
+                                       Margin="20,0,0,0"/>
+                                <Label Text="{Binding Stars, StringFormat='Excellent {0} Stars'}"
+                                 TextColor="#009592"
+                                 FontFamily="KeepCalm"
+                                 FontSize="16"
+                                 Grid.Column="1"
+                                 Grid.Row="2"
+                                       Margin="20,0,0,0"/>
+                                <Label Text="{Binding Reviews, StringFormat='{0:F1} reviews'}"
+                                 TextColor="Black"
+                                 FontFamily="KeepCalm"
+                                 FontSize="16"
+                                 Grid.Column="1"
+                                 Grid.Row="3"
+                                       Margin="20,0,0,0"/>
+                                <!--Column Three-->
+                                <Label Text="From"
+                                       TextColor="Black"
+                                       FontFamily="KeepCalm"
+                                       FontSize="13"
+                                       WidthRequest="55"
+                                       Margin="0,20,0,0"
+                                       Grid.Column="2"
+                                       Grid.Row="0"/>
+                                <Label Text="{Binding Cost, StringFormat='{0:F1}.-'}"
+                                       TextColor="#009592"
+                                       WidthRequest="55"
+                                         FontFamily="KeepCalm"
+                                         FontSize="22"
+                                         Grid.Column="2"
+                                         Grid.Row="1"/>
+                                <Label Text="Night"
+                                       TextColor="Black"
+                                       FontFamily="KeepCalm"
+                                       FontSize="13"
+                                       WidthRequest="55"
+                                       Grid.Column="2"
+                                       Grid.Row="2"/>
+
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <!--Column Three-Five-->
+            <CollectionView Margin="0,20,0,0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="1"
+                            Grid.Row="2"
+                            Grid.RowSpan="2"
+                            SelectionMode="Single"
+                            ItemsSource="{Binding CombinedMenuItemsf}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="*,*,*,*,*">
+                            <Frame Padding="10"
+                                   Margin="5"
+                                   BackgroundColor="Transparent"
+                                   CornerRadius="10"
+                                   BorderColor="#808080"
+                                   HeightRequest="290"
+                                   MinimumWidthRequest="250"
+                                   HasShadow="False"
+                                   Grid.ColumnSpan="5">
+                                <Grid RowDefinitions="*,*"
+                                      ColumnDefinitions="*,*,*,*,*">
+
+                                    <!--Column One-->
+                                    <Label Text="{Binding DTime}"
+                                           TextColor="#757575"
+                                           FontFamily="KeepCalm"
+                                           FontSize="20"
+                                           Grid.Column="0"
+                                           Grid.Row="0"/>
+                                    <Label Text="{Binding From}"
+                                           TextColor="#757575"
+                                           FontFamily="KeepCalm"
+                                           FontSize="16"
+                                           Grid.Column="0"
+                                           Grid.Row="1"/>
+
+                                    <!--Column Two-->
+                                    <Label Text="{Binding Duration, StringFormat='Non Stop {0}'}"
+                                           TextColor="#757575"
+                                           FontFamily="KeepCalm"
+                                           FontSize="15"
+                                           Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           Grid.Row="0"/>
+                                    <Label Text="{Binding Airline}"
+                                           TextColor="#757575"
+                                           FontFamily="KeepCalm"
+                                           FontSize="14"
+                                           Grid.Column="1"
+                                           Grid.ColumnSpan="2"
+                                           Grid.Row="1"/>
+                                    <!--Column Three-->
+                                    <Label Text="{Binding ATime}"
+                                           TextColor="#757575"
+                                           FontFamily="KeepCalm"
+                                           FontSize="20"
+                                           Grid.Column="3"
+                                           Grid.Row="0"/>
+                                    <Label Text="{Binding To}"
+                                           TextColor="#757575"
+                                           FontFamily="KeepCalm"
+                                           FontSize="16"
+                                           Grid.Column="3"
+                                           Grid.Row="1"/>
+                                    <!--Column Four-->
+                                    <Label Text="{Binding FCost, StringFormat='{0:F2}.-'}"
+                                           TextColor="#009592"
+                                           FontFamily="KeepCalm"
+                                           FontSize="20"
+                                           Grid.Column="4"
+                                           Grid.Row="0"
+                                           Grid.RowSpan="2"/>
+                                </Grid>
+                            </Frame>
+                       
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Frame Grid.Column="0"
+                   Grid.Row="3"
+                   Grid.RowSpan="2"
+                   BackgroundColor="White"
+                   HasShadow="True">
+                <Grid ColumnDefinitions="*,*,*"
+                      RowDefinitions="*,*,*,*,*,*,*,*,*">
+                    <Label Text="TOTAL"
+                           FontFamily="KeepCalm"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="1"/>
+                    <Label Text="Your price"
+                           FontFamily="KeepCalm"
+                           FontSize="18"
+                           TextColor="#757575"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="1"/>
+                    <Label Text="1348.-"
+                           FontFamily="KeepCalm"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="1"/>
+                    <Frame Grid.Row="3"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           Margin="20"
+                        >
+                        <Grid ColumnDefinitions="*,*,*">
+                            <Label Text="Money saved"
+                           FontFamily="KeepCalm"
+                           FontSize="16"
+                           TextColor="#757575"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"/>
+                            <Label Text="123,00.-"
+                           FontFamily="KeepCalm"
+                           FontSize="16"
+                           TextColor="#6684F2"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="2"/>
+                        </Grid>
+                    </Frame>
+
+                    <Label Text="TOTAL AMOUNT"
+                           FontFamily="KeepCalm"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="4"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"/>
+                    <Label Text="1348.-"
+                           FontFamily="KeepCalm"
+                           FontSize="18"
+                           TextColor="#757575"
+                           Grid.Row="4"
+                           Grid.Column="2"
+                           Grid.ColumnSpan="1"/>
+                </Grid>
+            </Frame>
+
+            <Frame Grid.Column="1"
+                   Grid.Row="3"
+                   Grid.RowSpan="2"
+                   BackgroundColor="Transparent"
+                   HasShadow="True">
+                <StackLayout>
+                    <Label Text="PAYMENT METHOD"
+                           FontFamily="KeepCalm"
+                           FontSize="20"
+                           TextColor="Black"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="1"/>
+                    <RadioButton Content="PayPal" 
+                                 GroupName="Options"
+                                 Margin="20,10,0,0"
+                                   FontFamily="KeepCalm"
+                                   FontSize="16"
+                                   TextColor="#757575"/>
+                    <RadioButton Content="Credit Card" 
+                                 GroupName="Options"
+                                 Margin="20,0,0,0"
+                                   FontFamily="KeepCalm"
+                                   FontSize="16"
+                                   TextColor="#757575"/>
+                    <RadioButton Content="Master Card" 
+                                 GroupName="Options"
+                                 Margin="20,0,0,0"
+                                   FontFamily="KeepCalm"
+                                   FontSize="16"
+                                   TextColor="#757575"/>
+                    <RadioButton Content="Apple Pay" 
+                                 GroupName="Options"
+                                 Margin="20,0,0,0"
+                                 FontFamily="KeepCalm"
+                                 FontSize="16"
+                                 TextColor="#757575"/>
+                    <Button Text="CHECKOUT"
+                                              HeightRequest="25"
+                                              WidthRequest="200"
+                                              CornerRadius="25"
+                                              TextColor="White"
+                                              BackgroundColor="#6684F2"
+                                              FontFamily="KeepCalm" 
+                            Clicked="OnCheckoutButtonClicked"/>
+                </StackLayout>
+            </Frame>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
