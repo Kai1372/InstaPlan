@@ -10,11 +10,11 @@ I’m happy to say that the mockups turned out well and were successfully implem
 ### Mockups
 <img width="800" height="451" alt="image" src="https://github.com/user-attachments/assets/8d80af26-555c-482a-8bb1-b0ce7759e797" />
 
-<img width="800" height="1’011" alt="image" src="https://github.com/user-attachments/assets/5648b212-3056-471c-800a-580325db8b32" />
+<img width="800" height="1011" alt="image" src="https://github.com/user-attachments/assets/5648b212-3056-471c-800a-580325db8b32" />
 
-<img width="800" height="1’007" alt="image" src="https://github.com/user-attachments/assets/2f5c06cd-1f80-4614-afc4-06a4e9dbbc45" />
+<img width="800" height="1007" alt="image" src="https://github.com/user-attachments/assets/2f5c06cd-1f80-4614-afc4-06a4e9dbbc45" />
 
-<img width="800" height="1’017" alt="image" src="https://github.com/user-attachments/assets/c699d2ce-1331-4112-8c09-be07b09384c9" />
+<img width="800" height="1017" alt="image" src="https://github.com/user-attachments/assets/c699d2ce-1331-4112-8c09-be07b09384c9" />
 
 ### Application
 <img width="800" height="498" alt="image" src="https://github.com/user-attachments/assets/ddc42b64-8093-4744-84d9-39f114712257" />
